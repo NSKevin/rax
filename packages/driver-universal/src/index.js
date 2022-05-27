@@ -5,11 +5,14 @@ import {
   isWeChatMiniProgram,
   isByteDanceMicroApp,
   isBaiduSmartProgram,
-  isKuaiShouMiniProgram
+  isKuaiShouMiniProgram,
+  isNativeJS,
 } from 'universal-env';
 
 let currentDriver;
-if (isWeex) {
+if (isNativeJS) {
+  currentDriver = require('./nativejs').default;
+} else if (isWeex) {
   currentDriver = require('./weex').default;
 } else if (isWeb) {
   currentDriver = require('./web').default;

@@ -1,0 +1,25 @@
+{
+  "name": "driver-nativejs",
+  "version": "1.0.0-beta.0",
+  "description": "nativejs driver for Rax",
+  "license": "BSD-3-Clause",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alibaba/rax.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alibaba/rax/issues"
+  },
+  "homepage": "https://github.com/alibaba/rax#readme",
+  "dependencies": {
+    "driver-dom": "^2.0.5",
+    "style-unit": "^3.0.0",
+    "runtime-shared": "^0.4.20",
+    "event-target-shim": "^2.0.0"
+  },
+  "devDependencies": {
+    "rax": "^1.0.0"
+  }
+}

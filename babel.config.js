@@ -10,6 +10,10 @@ module.exports = function(api) {
         'targets': {
           'esmodules': true
         }
+        // 'targets': {
+        //   'ios': 9,
+        //   'android': 21
+        // }
       }],
       ['@babel/preset-react', {
         'pragma': 'createElement'

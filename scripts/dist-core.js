@@ -166,13 +166,17 @@ buildCorePackages({
   packageName: 'driver-dom',
   name: 'DriverDom'
 });
-buildCorePackages({
-  packageName: 'driver-kraken',
-  name: 'DriverKraken'
-});
+// buildCorePackages({
+//   packageName: 'driver-kraken',
+//   name: 'DriverKraken'
+// });
 buildCorePackages({
   packageName: 'driver-weex',
   name: 'DriverKraken'
+});
+buildCorePackages({
+  packageName: 'driver-nativejs',
+  name: 'DriverNativeJS'
 });
 
 // Build rax compat react version to rax/lib/compat/index.js
